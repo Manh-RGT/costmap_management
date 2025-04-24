@@ -1,0 +1,59 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rgt/rgt_navigation/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/amcl/include/**",
+        "/home/rgt/rgt_navigation/src/artificial_potential_fields/include/**",
+        "/home/rgt/rgt_navigation/src/astar_planner/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/base_local_planner/include/**",
+        "/home/rgt/rgt_navigation/src/bezier_smoothing/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/carrot_planner/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/clear_costmap_recovery/include/**",
+        "/home/rgt/rgt_navigation/src/costmap_2d/include/**",
+        "/home/rgt/rgt_navigation/src/costmap_converter/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_navigate/costmap_cspace/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_rviz_plugins/costmap_cspace_rviz_plugins/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/dwa_local_planner/include/**",
+        "/home/rgt/rgt_navigation/src/dwa_planner/include/**",
+        "/home/rgt/rgt_navigation/src/global_path/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/global_planner/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/map_server/include/**",
+        "/home/rgt/rgt_navigation/src/move_base/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/move_slow_and_clear/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/nav_core/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/navfn/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_navigate/planner_cspace/include/**",
+        "/home/rgt/rgt_navigation/src/policy_navigation/include/**",
+        "/home/rgt/rgt_navigation/src/pure_puresuit_planner/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_motor/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_interface/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_monitor/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_router/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_settings/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_synchronizer/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_voronoi_graph/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_package_manager/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/rotate_recovery/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_rviz_plugins/router_rviz_plugins/include/**",
+        "/home/rgt/rgt_navigation/src/teb_local_planner/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_navigate/trajectory_tracker/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_msgs/trajectory_tracker_msgs/include/**",
+        "/home/rgt/rgt_navigation/src/rgt_navigation2/rgt_navigation2/rgt_nav2_rviz_plugins/trajectory_tracker_rviz_plugins/include/**",
+        "/home/rgt/rgt_navigation/src/navigation_ros/voxel_grid/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

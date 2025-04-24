@@ -1,0 +1,14 @@
+<launch>
+  <!-- Global Costmap -->
+
+<!-- <rosparam file="$(find costmap_2d)/launch/global_costmap.yaml" command="load"/>
+  <node name="global_costmap" pkg="costmap_2d" type="costmap_2d_node" output="screen">
+  </node> -->
+
+  <!-- Local Costmap -->
+  <rosparam file="$(find costmap_2d)/launch/local_costmap.yaml" command="load"/>
+  <node name="local_costmap" pkg="costmap_2d" type="costmap_2d_node" output="screen">
+  <!-- <node name="rgt_costmap_layers" pkg="rgt_costmap_layers" type="rgt_costmap_layers" output="screen"> -->
+
+  </node>
+</launch>

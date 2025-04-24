@@ -1,0 +1,26 @@
+local_costmap:
+  global_frame: "sirbot1/odom"            # Usually "odom" for local costmap
+  robot_base_frame: "sirbot1/base_link"
+  update_frequency: 5.0
+  publish_frequency: 5.0
+  transform_tolerance: 0.5
+  rolling_window: true            # Rolling window to stay centered on the robot
+  width: 1.0                     # Dimensions of the local costmap (meters)
+  height: 1.0
+  resolution: 0.05
+
+  plugins:
+    # - {name: static_layer, type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer, type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+
+  obstacle_layer:
+    observation_sources: point_cloud
+    point_cloud: {sensor_frame: sirbot1/base_laser_link, data_type: PointCloud2, topic: /sirbot1/pcl_scan, marking: true, clearing: true}
+
+  inflation_layer:
+    inflation_radius: 0.2
+
+  static_layer:
+    map_topic: "/sirbot1/map_navigation"
+    first_map_only: true

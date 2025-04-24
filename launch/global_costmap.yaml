@@ -1,0 +1,26 @@
+global_costmap:
+  global_frame: "map"            # Global frame of the map (usually "map" or "odom")
+  robot_base_frame: "sirbot1/base_link"   # Robot's base frame
+  update_frequency: 1.0           # Frequency for updating the costmap (Hz)
+  publish_frequency: 1.0          # Frequency for publishing the costmap (Hz)
+  transform_tolerance: 0.5
+  static_map: true                # Indicates that we have a static map
+  
+  plugins:
+    - {name: static_layer, type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer, type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+
+# Configure static layer to load the map from /map server
+
+  static_layer:
+    map_topic: "sirbot1/map_navigation"
+    first_map_only: true
+
+# Configure obstacle layer to use LIDAR for dynamic obstacles
+  obstacle_layer:
+    observation_sources: point_cloud
+    point_cloud: {sensor_frame: sirbot1/base_laser_link, data_type: PointCloud2, topic: /sirbot1/pcl_scan, marking: true, clearing: true}
+
+  inflation_layer:
+    inflation_radius: 0.5           # Radius around obstacles to add a cost
